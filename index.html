@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryptor</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content__container">
+            <div class="content__container__centered">
+                <h1 class="content__title">Text Encryptor</h1>
+
+                    <label for="input"></label>
+                    <input id="input" class="content__input" type="text" name="entrada" placeholder="Ingresa aca el texto..."  />
+                    <p class="content__text_reminder">
+                        <i class="fas fa-exclamation-circle"></i> Solo letras minusculas y sin acentos
+                    </p>
+                    <button type="button" class="content__button" id="encriptar__btn">Encriptar</button>
+                    <button type="button" class="content__button" id="desencriptar__btn">Desencriptar</button>
+
+            </div>
+        </div>
+        
+        <div class="output__container" >
+            <div class="content__output">
+                <p class="content__output__text" id="not-found-msg">No se encontro ningun mensaje</p>
+                
+                <div id="output"></div>
+                
+                <button type="submit" id="copiar__btn" >Copiar Texto</button>
+            </div>
+        </div>
+    </div>
+    <footer>Matias Arietto, 2024.</footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+:root {
+    --background-color: rgb(20, 20, 20); 
+    --secondary-color: #bde24c;
+    --text-color: #f6f6f6;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    font-size: 1.2rem;
+
+}
+
+body {
+    width: 100vw;  
+    height: auto;
+    background-color: var(--background-color);
+}
+
+.container {
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 5vw;
+    
+
+}
+
+.content__container {
+    width: 60vw;
+    height: 70%;
+    border: solid 1px whitesmoke;
+    border-radius: 4px;
+    margin: 0;
+
+
+}
+
+.content__container__centered {
+    margin: 5% 10vw;
+}
+
+.content__title {
+    max-width: 16rem;
+    font-size: 2rem;
+    margin-bottom: .6rem;
+    background: var(--secondary-color);
+}
+
+.content__input {
+    width: 40vw;
+    padding: .5rem 3rem 6rem .5rem;
+    background-color: var(--background-color);
+    border: solid 2.2px var(--secondary-color);
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 1rem 0;
+    text-transform: lowercase;
+}
+
+.content__input::placeholder {
+    color: #cccaca;
+}
+
+i {
+    font-size: 0.9rem;
+}
+
+.content__text_reminder {
+    color: rgb(182, 182, 182);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.content__button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+#encriptar__btn {
+    background-color: var(--secondary-color);
+    border: solid 2px var(--background-color);
+    color: white;
+    
+}
+#encriptar__btn:hover {
+    transition: background-color 95ms 95ms ease-in-out, color 95ms 95ms ease-in-out;
+    color: var(--background-color);
+    background-color: #c3ff00;    
+}
+
+#desencriptar__btn {
+    background-color: var(--background-color);
+    border: solid 2px var(--secondary-color);
+    color: var(--secondary-color);
+}
+#desencriptar__btn:hover {
+    transition: background-color 125ms 125ms ease-in-out, color 125ms 125ms ease-in-out;
+    color: var(--background-color);
+    background-color: #c3ff00;    
+}
+
+/*Output Section*/
+
+.output__container {
+    width: 30vw;
+    border: solid 1px whitesmoke;
+    border-radius: 4px;
+    padding: .5rem 3rem 6rem .5rem;
+
+
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(26, 25, 25);
+    margin: 1rem 0;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 13px;
+}
