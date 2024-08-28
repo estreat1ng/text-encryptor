@@ -1,6 +1,7 @@
 :root {
     --background-color: rgb(20, 20, 20); 
     --secondary-color: #bde24c;
+    --terciary-color: #eeff00;
     --text-color: #f6f6f6;
 }
 
@@ -65,6 +66,12 @@ body {
     color: #cccaca;
 }
 
+.content__input:focus {
+    border-color: #e5ff00;
+    transition: border-color 225ms 225ms linear;
+    outline: none;
+}
+
 i {
     font-size: 0.9rem;
 }
@@ -91,7 +98,7 @@ i {
 #encriptar__btn:hover {
     transition: background-color 95ms 95ms ease-in-out, color 95ms 95ms ease-in-out;
     color: var(--background-color);
-    background-color: #c3ff00;    
+    background-color: #e5ff00;    
 }
 
 #desencriptar__btn {
@@ -102,7 +109,8 @@ i {
 #desencriptar__btn:hover {
     transition: background-color 125ms 125ms ease-in-out, color 125ms 125ms ease-in-out;
     color: var(--background-color);
-    background-color: #c3ff00;    
+    background-color: var(--terciary-color);
+    border-color: var(--terciary-color);
 }
 
 /*Output Section*/
@@ -125,4 +133,8 @@ footer {
     text-align: center;
     color: var(--text-color);
     font-size: 13px;
+}
+
+.content__output__text {
+    
 }
