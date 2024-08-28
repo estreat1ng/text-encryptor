@@ -1,5 +1,5 @@
 const textArea = document.querySelector(".content__input");
-const mensaje = document.querySelector(".texto-modificado");
+const mensaje = document.querySelector(".mensaje");
 const copyButton = document.querySelector('.copiar');
 
 /*    
