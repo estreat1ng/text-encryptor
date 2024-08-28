@@ -14,6 +14,13 @@
 
 }
 
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
 body {
     width: 100vw;  
     height: auto;
@@ -23,10 +30,8 @@ body {
 .container {
     color: var(--text-color);
     display: flex;
-    justify-content: center;
     gap: 40px;
     margin-top: 5vw;
-    
 
 }
 
@@ -49,6 +54,7 @@ body {
     font-size: 2rem;
     margin-bottom: .6rem;
     background: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .content__input {
@@ -89,7 +95,16 @@ i {
     font-weight: bolder;
     padding: 5px;
 }
-
+.copiar {
+    background-color: var(--secondary-color);
+    border: solid 2px var(--background-color);
+    color: white;
+}
+.copiar:hover {
+    transition: background-color 95ms 95ms ease-in-out, color 95ms 95ms ease-in-out;
+    color: var(--background-color);
+    background-color: #e5ff00;    
+}
 #encriptar__btn {
     background-color: var(--secondary-color);
     border: solid 2px var(--background-color);
@@ -131,7 +146,6 @@ i {
 
 .mensaje {
     margin-top: 10px;
-
     padding: .5rem 3rem 6rem .5rem;
     background-color: var(--background-color);
     border: solid 2.2px var(--secondary-color);

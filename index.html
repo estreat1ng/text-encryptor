@@ -5,32 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto by JGS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <main>
-        <section class="container">
-            <h1 class="content__title"></h1>
-            <textarea class="content__input"; rows="12"; cols="50"; maxlength="350"; minlength="10"; placeholder="Ingresa el texto a encriptar o desencriptar"></textarea>
-            <div>
-                <h5 class="content__input__reminder"> *Solo letras minúsculas y sin acentos</h5>
+        <div class="container">
+            <div class="content__container">
+                <div class="content__container__centered">
+                <h1 class="content__title">Encriptador de Texto</h1>
+                    <textarea class="content__input"; rows="12"; cols="50"; maxlength="350"; minlength="10"; placeholder="Ingresa el texto a encriptar o desencriptar"></textarea>
+                    <p class="content__input__reminder"> *Solo letras minúsculas y sin acentos</p>
+                    <button class="boton-encriptar content__button" id="encriptar__btn" onclick="botonEncriptar()"> encriptar</button>
+                    <button class="boton-desencriptar content__button" id="desencriptar__btn" onclick="botonDesencriptar()">desencriptar</button>
+                </div>
             </div>
-            <div class="botones">
-                <button class="boton-encriptar" onclick="botonEncriptar()"> encriptar</button>
-                <button class="boton-desencriptar" onclick="botonDesencriptar()">desencriptar</button>
-            </div>
-        </section>
+        </div>
 
-        <section>
-            <textarea readonly class="texto-modificado"; rows="12"; cols="50";></textarea>
-            <div>
-                <button class="copiar" onclick="copiarAlPortapapeles()">copiar</button>
+        <div class="output__container">
+            <div class="content__output">
+                <h1 class="content__title">Desencriptador</h1>
+                <textarea readonly class="mensaje content__input"; rows="12"; cols="50";></textarea>
+                <button class="copiar content__button" onclick="copiarAlPortapapeles()">copiar</button>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="hecho-por">
+    <footer>
         <p>Matias Arietto, 2024</p>
     </footer>
 
