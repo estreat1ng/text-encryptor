@@ -17,18 +17,23 @@ outputText.style.display = "none";
 copiarButton.style.display = "none";
 
 
-// function encriptar texto
-
 function encriptarTexto(texto) {
-//  llaves de encriptacion
-const letraE = "enter";
-const letraI = "imes";
-const letraA = "ai";
-const letraO = "ober";
-const letraU = "ufat";
-
-
-
+    //  llaves de encriptacion
+    /*const letraE = inputText.replace("e", "enter");
+    const letraI = inputText.replace("i", "imes");
+    const letraA = inputText.replace("a", "ai");
+    const letraO = inputText.replace("o", "ober");
+    const letraU = inputText.replace("u", "ufat");*/
 
 }
 
+function encriptarTexto(texto) {
+    //  llaves de encriptacion
+    const letraE = outputText.replace("enter", "e");
+    const letraI = outputText.replace("imes", "i");
+    const letraA = outputText.replace("ai", "a");
+    const letraO = outputText.replace("ober", "o");
+    const letraU = outputText.replace("ufat", "u");
+    
+    
+    }
