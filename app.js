@@ -42,13 +42,14 @@ function desencriptar(texto) {
     return texto
 }
 
+// copiar texto encriptado
 
 function copiar() {
     if (outputText.value) {
         navigator.clipboard.writeText(outputText.value)
-        alert('Successfuly copied to your clipboard!');
+        alert('Copiado correctamente a tu clipboard!');
     } else {
-        alert('No hay nigun text encriptado para copiar');
+        alert("No hay ningun texto para copiar");
     }
 
 }
