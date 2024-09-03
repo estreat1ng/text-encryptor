@@ -1,41 +1,43 @@
 <!DOCTYPE html>
-<html lang="es-mx"> 
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de texto by JGS</title>
+    <title>Text Encryptor</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
     <main>
+        <h1 class="title">Text Encryptor</h1>
         <div class="container">
-            <div class="content__container">
+            <div class="input__container">
                 <div class="content__container__centered">
-                <h1 class="content__title">Encriptador de Texto</h1>
-                    <textarea class="content__input"; rows="12"; cols="50"; maxlength="350"; minlength="10"; placeholder="Ingresa el texto a encriptar o desencriptar"></textarea>
-                    <p class="content__input__reminder"> *Solo letras minúsculas y sin acentos</p>
-                    <button class="boton-encriptar content__button" id="encriptar__btn" onclick="botonEncriptar()"> encriptar</button>
-                    <button class="boton-desencriptar content__button" id="desencriptar__btn" onclick="botonDesencriptar()">desencriptar</button>
+                    <textarea class="input-text"; placeholder="Ingresa aca el texto..."></textarea>
+                    <p class="content__text_reminder">
+                        <i class="fas fa-exclamation-circle"></i> Solo letras minusculas y sin acentos
+                    </p>
+                    <button class="content__button" id="encriptar__btn" onclick="encriptarButton()">Encriptar</button>
+                    <button onclick="desencriptarButton()" class="content__button" id="desencriptar__btn">Desencriptar</button>
+
+                </div>
+            </div>
+            
+            <div class="output__container" >
+                <div class="content__input">
+                    <div class="content__container__centered">
+                        <textarea readonly class="output-text" placeholder="Texto encriptado aca"></textarea>
+                        <button onclick="copiar()" class="content__button" id="copiar__btn">Copiar</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="output__container">
-            <div class="content__output">
-                <h1 class="content__title">Desencriptador</h1>
-                <textarea readonly class="mensaje content__input"; rows="12"; cols="50";></textarea>
-                <button class="copiar content__button" onclick="copiarAlPortapapeles()">copiar</button>
-            </div>
-        </div>
+	<footer>
+		<p>Made with <span style="color: red;"><3</span> by Matias Arietto</p>
+	</footer>
     </main>
-
-    <footer>
-        <p>Matias Arietto, 2024</p>
-    </footer>
-
-<script src="app.js"></script>
-    
+    <script src="app.js"></script>
 </body>
 </html>
